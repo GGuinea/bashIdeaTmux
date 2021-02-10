@@ -42,7 +42,7 @@ parse_git_branch() {
 }
 
 __export_ps1() {
-  export PS1="[\u@\h]\033[32m\]\w\033[00m\] (\033[33m\]\$(parse_git_branch)\[\033[31m\]\$(parse_git_dirty)\[\033[00m\])$ "
+  export PS1="\033[32m\]\W\033[00m\] (\033[33m\]\$(parse_git_branch)\[\033[31m\]\$(parse_git_dirty)\[\033[00m\])$ "
 }
 __export_ps1
 PrROMPT_COMMAND='__export_ps1'
